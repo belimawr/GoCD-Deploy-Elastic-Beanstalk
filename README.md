@@ -30,6 +30,7 @@ Requirements to run
 
 TODO
 --------
+* Improve documentation about the environment variables used;
 * Add a GoCD pipeline template/example;
 * Build applications with dependencies using [Glide](https://github.com/Masterminds/glide);
 * Use Docker to test, build and deploy the application;
