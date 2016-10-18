@@ -22,10 +22,18 @@ How it works
  }
 ```
 
+### Configuration/Environment variables
+* ``AWS_DEPLOY_APPLICATION``: AWS Elastic Beanstalk Application to deploy to;
+* ``AWS_DEPLOY_APPLICATION``: AWS Elastic Beanstalk Environment to deploy to;
+* ``SUFFIX``: A suffix to be added to the application label generated;
+* ``S3BUCKET``: A S3 Bucket to upload the application;
+* ``GO_PIPELINE_COUNTER``: A conter that is set by GoCD and is added to the application version label.
+
 Requirements to run
 -----------------------------
 * The GoCD agent needs: 
  * Go globally installed;
+ * [go-junit-report](https://github.com/jstemmer/go-junit-report) binary in the PATH;
  * Python 2.7, [Boto3](https://boto3.readthedocs.io/en/latest/index.html) and [AWS CLI](https://aws.amazon.com/cli/) also installed globally.
 
 TODO
