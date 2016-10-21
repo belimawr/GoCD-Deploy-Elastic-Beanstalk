@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -x
 export GOPATH=$(pwd)
 GITHASH=`git rev-parse --short HEAD`
 
@@ -9,18 +9,18 @@ cp *.go src/GoCD/
 
 cd src/GoCD/
 
-go build -o ../../bin/GoCD
+go build -o ../../bin/$APPLICATION_NAME
 
 cd ../../
 
 rm -rf ./src
 
-cp bin/GoCD bin/application
+cp bin/$APPLICATION_NAME bin/application
 
 cd bin
 
-zip -9 GoCD-$GITHASH-STG.zip application
+zip -9 $APPLICATION_NAME-$GITHASH-$SUFFIX.zip application
 
-cp GoCD-$GITHASH-STG.zip GoCD_To_Deploy.zip
+cp $APPLICATION_NAME-$GITHASH-$SUFFIX.zip $APPLICATION_NAME_To_Deploy.zip
 
-rm GoCD application
+rm $APPLICATION_NAME application

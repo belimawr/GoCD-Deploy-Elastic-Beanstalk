@@ -23,11 +23,13 @@ How it works
 ```
 
 ### Configuration/Environment variables
+* ``APPLICATION_NAME``: Name of the application/package to build
 * ``AWS_DEPLOY_APPLICATION``: AWS Elastic Beanstalk Application to deploy to;
 * ``AWS_DEPLOY_APPLICATION``: AWS Elastic Beanstalk Environment to deploy to;
 * ``SUFFIX``: A suffix to be added to the application label generated;
 * ``S3BUCKET``: A S3 Bucket to upload the application;
 * ``GO_PIPELINE_COUNTER``: A conter that is set by GoCD and is added to the application version label.
+
 
 Requirements to run
 -----------------------------
@@ -38,7 +40,6 @@ Requirements to run
 
 TODO
 --------
-* Improve documentation about the environment variables used;
 * Add a GoCD pipeline template/example;
 * Build applications with dependencies using [Glide](https://github.com/Masterminds/glide);
 * Use Docker to test, build and deploy the application;

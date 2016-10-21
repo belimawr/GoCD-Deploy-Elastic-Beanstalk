@@ -1,3 +1,4 @@
+#!/bin/bash -x
 export GOPATH=$(pwd)
 
 mkdir -p src/GoCD/
