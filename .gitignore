@@ -3,4 +3,6 @@ reports/
 *.pyc
 *~
 *.bak
-
+.env
+vendor/
+\#*
