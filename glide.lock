@@ -1,0 +1,6 @@
+hash: c2b084c5c0abf65360681533c08def97bfc3ca64f767c8985786839b0ce1cffe
+updated: 2016-11-07T22:21:08.245347562-02:00
+imports:
+- name: github.com/dimiro1/health
+  version: 0d924d23b0ee0f737c27f70605a6cf60913f29c6
+testImports: []
