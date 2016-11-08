@@ -16,6 +16,6 @@ func main() {
 	})
 
 	if err := http.ListenAndServe("0.0.0.0:5000", nil); err != nil {
-		log.Fatal("Could not start the server")
+		log.Fatalf("Could not start the server: %s", err)
 	}
 }
