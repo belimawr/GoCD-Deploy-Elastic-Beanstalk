@@ -21,5 +21,5 @@ rm $APPLICATION_NAME application
 
 cd ../
 
-chown -R $USER:$USER build/ vendor/ $APPLICATION_NAME
+chown -R $USER_ID:$USER_ID build/ vendor/ $APPLICATION_NAME
 
