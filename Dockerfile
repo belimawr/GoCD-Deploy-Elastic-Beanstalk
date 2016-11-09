@@ -12,5 +12,6 @@ RUN apt-get install -y nodejs
 
 RUN go get github.com/Masterminds/glide
 RUN go install github.com/Masterminds/glide
+RUN go get -u github.com/jstemmer/go-junit-report
 
 RUN npm install -g aglio
