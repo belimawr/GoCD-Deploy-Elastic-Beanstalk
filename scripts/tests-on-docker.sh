@@ -3,6 +3,7 @@
 rm -rf reports
 mkdir reports
 
+glide install
 go test -coverprofile=reports/coverage.out
 go tool cover -html=reports/coverage.out -o reports/coverage.html
 go test -v > reports/test.tmp
