@@ -14,6 +14,6 @@ cat reports/test.tmp | go-junit-report > reports/report.xml
 
 rm reports/test.tmp
 
-chown -R $USER_ID:$USER_ID reports/
+chown -R $USER_ID:$USER_ID reports/ vendor/
 
 exit $ret_code
