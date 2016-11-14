@@ -1,0 +1,7 @@
+FROM python:2.7.12
+
+MAINTAINER Tiago Queiroz
+
+RUN pip install --upgrade pip
+
+RUN pip install boto3 awscli

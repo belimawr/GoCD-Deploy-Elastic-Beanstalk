@@ -10,5 +10,5 @@ docker run --rm \
 	   -e AWS_DEPLOY_ENVIRONMENT \
 	   -e GO_PIPELINE_COUNTER \
 	   -e S3BUCKET \
-	   gocd-builder \
+	   gocd-example-build-and-test \
 	   ./scripts/tests-on-docker.sh 
